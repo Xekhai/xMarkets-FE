@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Algo Markets
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Algo Markets, a React based application allowing users to trade and speculate on event outcomes using Algorand (ALGO) cryptocurrency.
 
-## Available Scripts
+This application provides a simple and user-friendly platform for viewing and interacting with prediction markets. Users can purchase "yes" or "no" shares for a particular event. Once the event is resolved, shares can be sold for ALGO, with the rate depending on the outcome of the event.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- View various prediction markets
+- Buy and sell shares in a prediction market
+- Details about each market including number of "yes" and "no" shares, Algo Balance, days left until resolution, etc.
+- Firebase integration for user authentication and data storage
+- Use of Algorand's blockchain for transaction security
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The main components of the project are:
 
-### `npm test`
+- `App.js`: This is the entry point of our application.
+- `MarketList`: This component fetches market data and lists each market as a card.
+- `MarketCard.js`: This is the component for each individual market. It shows detailed information about the market and includes forms for buying and selling shares.
+- `FormComponent.js`: This component handles buying and selling of shares.
+- `firebaseConfig`: This file contains the configuration for Firebase and includes initialization of Firebase services like Firestore and Authentication.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Assets like icons are stored in `src/assets/`.
 
-### `npm run build`
+The project also includes helper functions and constants.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install all dependencies.
+4. Setup your Firebase project and replace the existing Firebase configuration in `src/firebaseConfig/index.js` with your own.
+5. Run `npm start` to start the development server.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dependencies
 
-### `npm run eject`
+- React
+- Firebase (Firestore, Authentication)
+- Algorand's blockchain
+- Material-UI
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+We appreciate all contributions. If you are planning to contribute back to the codebase, please create an issue detailing what you want to do.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Algo Markets is [MIT licensed](./LICENSE).
 
-## Learn More
+## Disclaimer
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Algo Markets is a demonstration project and should not be used for real financial transactions. Please use it at your own risk.
