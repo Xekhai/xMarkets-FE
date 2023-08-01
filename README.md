@@ -1,6 +1,6 @@
-# Algo Markets
+# xMarkets
 
-Welcome to Algo Markets, a React based application allowing users to trade and speculate on event outcomes using Algorand (ALGO) cryptocurrency.
+Welcome to xMarkets, a React based application allowing users to trade and speculate on event outcomes using Algorand (ALGO) cryptocurrency.
 
 This application provides a simple and user-friendly platform for viewing and interacting with prediction markets. Users can purchase "yes" or "no" shares for a particular event. Once the event is resolved, shares can be sold for ALGO, with the rate depending on the outcome of the event.
 
